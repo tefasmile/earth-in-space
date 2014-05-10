@@ -1,0 +1,71 @@
+body
+{
+	width: 100% ;
+	height: 100%;
+	background-color: black;
+}
+#sun
+{
+	height: 250px;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	position: absolute;
+	top: 50%;
+	width: 250px;
+	border-color: orange;
+	border-style: solid;
+	border-width: 9px;
+	border-radius: 100%;
+	box-shadow: 0 0 128px red;
+}
+#earth
+{
+	background-color: blue;
+	border-radius: 100%;
+	height: 50px;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	width: 50px;
+	margin-left:-24px; 
+	margin-top:-25px;
+}
+#earth-orbita
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	margin-left: -229px;
+	margin-top: -229px;
+	border-style: dotted;
+	border-width: 2px;
+	border-radius: 100%;
+	border-color: white;
+	-webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
